@@ -23,16 +23,16 @@ func (l *Listener) Listen() {
                 blockNumber++
                 block := pwrgo.GetBlock(blockNumber)
                 for _, txn := range block.Transactions {
-					if txn.Type == "VM Data" {
-						txAppId := txn.VmId
-						if txAppId != appId {
-							continue
-						}
-						
-						data, _ := hex.DecodeString(txn.Data)
-					
-						fmt.Printf("Message From %s: %s\n\n> ", txn.From, string(data))
-					}
+                    if txn.Type == "VM Data" {
+                        txAppId := txn.VmId
+                        if txAppId != appId {
+                            continue
+                        }
+                        
+                        data, _ := hex.DecodeString(txn.Data)
+                    
+                        fmt.Printf("Message From %s: %s\n\n> ", txn.From, string(data))
+                    }
                 }
             }
 
