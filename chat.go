@@ -38,8 +38,6 @@ func main() {
         }
 
         var data = []byte(message)
-        
-        fmt.Println("Using nonce: ", nonce)
         pwrgo.ReturnBlockNumberOnTx = true
         var dataTx = pwrgo.SendVMDataTx(appId, data, nonce, wallet.PrivateKey)
         if dataTx.Success {
