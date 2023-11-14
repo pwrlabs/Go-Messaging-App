@@ -1,6 +1,14 @@
 # Go-Messaging-App
 A simple Golang-based messaging application on PWR Chain. Built using pwrgo.
 
+# Install pwrgo library
+
+To install the pwrgo library, run
+
+```
+go get github.com/pwrlabs/pwrgo@v0.0.2
+```
+
 # Run the application
 
 In the repo root, run
