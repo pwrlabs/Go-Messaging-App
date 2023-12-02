@@ -8,7 +8,7 @@ require (
 	github.com/ecies/go/v2 v2.0.7 // indirect
 	github.com/ethereum/go-ethereum v1.13.4 // indirect
 	github.com/holiman/uint256 v1.2.3 // indirect
-	github.com/pwrlabs/pwrgo v0.0.2 // indirect
+	github.com/pwrlabs/pwrgo v0.0.3 // indirect
 	golang.org/x/crypto v0.14.0 // indirect
 	golang.org/x/sys v0.13.0 // indirect
 )
